@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+   <meta charset="UTF-8">
+   <title>galerija</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+body {
+    font-family: sans-serif;
+	align-items: center;
+    margin: 20px;
+	width: 960px;
+	padding: 20px;
+	background-color: white;
+	justify-content: center;
+	}
+#container {
+    margin-top: 40px;
+	margin-left: 70px;
+	column-gap: 40px;
+	row-gap: 50px;
+    align-items: center;
+	display: inline-grid;
+    grid-auto-rows: 100px;
+	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-template-columns: 13em 13em 13em 13em 13em;
+	}
+#container > div, img {
+	width: 200px;
+	height: 100px;
+    display: inline-grid;
+	justify-items: center;
+	background-color: #00BFFF;
+	border: 1px solid #DCDCDC;
+	box-shadow: 0 0 10px #DCDCDC;
+	border-radius: 10px 10px 1px 1px;
+}
+h1 {
+    margin-left: 70px
+}
+p {
+    width: 1200px;
+	margin-left: 70px;
+	margin-top: 50px;
+  }
+@media (min-width: 144px) {
+  #container { grid-template-columns: repeat(1, 13em); }
+}
+@media (min-width: 550px) {
+  #container { grid-template-columns: repeat(2, 13em); }
+}
+@media (min-width: 850px) {
+  #container { grid-template-columns: repeat(3, 13em); }
+}
+@media (min-width: 1024px) {
+  #container { grid-template-columns: repeat(5, 13em); }
+}
+</style>
+
+</head>
+<body>
+
+   <h1>Gallery Heading</h1>
+
+   <div id="container">
+      <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+	  <div><img src="placeholder-image.png" alt="placeholder"></img>Text Image</div>
+   </div>
+
+  <p>   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend risus in arcu molestie laoreet. 
+        Ut aliquam sem quis ex fermentum mollis. Sed id malesuada nulla, a finibus nisi. Integer ac neque enim. 
+        Suspendisse potenti. Morbi aliquet, nunc in tempus interdum, felis est lacinia justo, in volutpat ante sapien at lorem. 
+        Proin accumsan diam in libero lobortis efficitur. Proin quis libero erat. Sed a enim ante. Aenean vulputate lectus et urna ornare pulvinar.
+        Duis arcu neque, vestibulum eleifend magna vel, blandit vehicula felis. Etiam porttitor mauris nec felis varius laoreet. 
+        Etiam interdum efficitur hendrerit.
+    </p> 
+  
+</body>
+</html>
